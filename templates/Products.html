@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}'
+<div class="body">
+<div class="title">
+<h1>My Shopping List</h1>
+
+
+</div>
+<div class="AddNewLists">
+    <input type="text">
+    <input type="submit" value="Dodaj produkt">
+    <input type="submit" value="Stwórz listę">
+</div>
+<div class="ShoppingLists">
+    <form action="/Products" METHOD="POST">
+        <input type="text" name="content" id="content">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Dodaj">
+
+    </form>
+
+
+
+</div>
+</div>
+<footer>
+  <p>Autor: Hubert Ostrowski</p>
+  <p><a id="stopka" href="mailto:hubert.ostrowski@student.ukw.edu.pl">hubert.ostrowski@student.ukw.edu.pl</a></p>
+</footer>
+{% endblock %}
